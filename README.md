@@ -82,7 +82,7 @@ Aplicar lógica de programação em projetos web e automação.
 # ✍️ Autor
 
 Gustavo Moretim Canzi
-💡 Estudante de tecnologia e entusiasta da programação.
-📚 Buscando constantemente aprender, criar e evoluir com código.
-🔗 LinkedIn - https://www.linkedin.com/in/gustavo-canzi/
- | GitHub - https://github.com/gcanzi
+### 💡 Estudante de tecnologia e entusiasta da programação.
+### 📚 Buscando constantemente aprender, criar e evoluir com código.
+### 🔗 LinkedIn - https://www.linkedin.com/in/gustavo-canzi/
+### GitHub - https://github.com/gcanzi

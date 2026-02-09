@@ -6,6 +6,7 @@ qtd = list.count("x")
 
 '''
 .count = ele percorre a lista contando quantos determinados elementos existem (No caso, x = 0 elementos e 22 = 2 elementos)
+
 '''
 
 print(f"Quantidade de 22 = {qtd}")

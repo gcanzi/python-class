@@ -11,7 +11,6 @@ primeiro a posição e depois o conteúdo.
 .append = insere uma variavel na lista
 '''
 
-
 print(list)
 
 

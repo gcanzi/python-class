@@ -1,5 +1,5 @@
 # Gustavo Moretim Canzi
-# 23/02/2026
+# 24/02/2026
 
 import os
 os.system("cls")
@@ -8,7 +8,6 @@ lista = []
 lista_numerica = []
 lista_random = []
 elem = ""
-soma = 0
 
 while True:
 
@@ -36,29 +35,26 @@ while True:
                 if elem.isnumeric() == False:
                     lista_random.append(elem)
                 else:
-                    int(lista_numerica.append(elem))
+                    lista_numerica.append(int(elem))
+            print("Lista separada com sucesso!")
+            print(lista_numerica)
+            print(lista_random)
         case '3':
-            for elem in lista_numerica:
-                soma = soma + elem
+            print("a - A soma dos valores: ", sum(lista_numerica))
 
-            print("a - A soma dos valores: ", soma)
+            print(f"b - Existem {len(lista_numerica)} elementos na lista.")
 
-            print("b - Quantos elementos tem na lista: ", len.list())
-
-            lCrescente = lista.copy()
+            lCrescente = lista_numerica.copy()
             lCrescente.sort()
             print("c - Lista em ordem crescente: ", lCrescente)
 
-            lDecrescente = lista.copy()
+            lDecrescente = lista_numerica.copy()
             lDecrescente.sort(reverse=True)
             print("d - Lista em ordem decrescente: ", lDecrescente)
 
         case '4':
-            print("Esse elemento não existe.")
-        case '5':
-            print(lista)
-            print(lista_numerica)
-            print(lista_random)
+            lJuntas = lCrescente + lista_random
+            print(lJuntas)
         case _ :
             "Número inválido!"
     

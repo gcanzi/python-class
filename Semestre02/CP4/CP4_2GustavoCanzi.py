@@ -8,6 +8,7 @@ lista = []
 lista_numerica = []
 lista_random = []
 elem = ""
+soma = 0
 
 while True:
 
@@ -32,20 +33,28 @@ while True:
                     lista.append(elem)
         case '2':
             for elem in lista:
-                while not elem.isnumeric():
+                if elem.isnumeric() == False:
                     lista_random.append(elem)
                 else:
-                    lista_numerica.append(elem)
+                    int(lista_numerica.append(elem))
         case '3':
-            print()
-        case '4':
-            x = int(input("\nDigite a posição do elemento que deseja remover: "))
-            qtd_elementos = len(lista)
+            for elem in lista_numerica:
+                soma = soma + elem
 
-            if (0 <= x) and (x < qtd_elementos):
-                lista.pop(x)
-            else:
-                print("Esse elemento não existe.")
+            print("a - A soma dos valores: ", soma)
+
+            print("b - Quantos elementos tem na lista: ", len.list())
+
+            lCrescente = lista.copy()
+            lCrescente.sort()
+            print("c - Lista em ordem crescente: ", lCrescente)
+
+            lDecrescente = lista.copy()
+            lDecrescente.sort(reverse=True)
+            print("d - Lista em ordem decrescente: ", lDecrescente)
+
+        case '4':
+            print("Esse elemento não existe.")
         case '5':
             print(lista)
             print(lista_numerica)

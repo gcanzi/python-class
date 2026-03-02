@@ -2,7 +2,7 @@ import os
 os.system("cls")
 
 #Remover pelo indice
-'''
+
 lista = ["fiap", 65, True, 25, 68.8, "Engenharia"]
 print(lista)
 indice = int(input("Indice: "))
@@ -15,10 +15,10 @@ else:
     print(f"O elemento {elem} foi removido!")
 
 print(lista)
-'''
+
 
 #Remover pelo conteudo 
-'''
+
 #          0      1    2    3    4         5
 lista = ["fiap", 65, True, 25, 68.8, "Engenharia"]
 lista_aux = []
@@ -36,7 +36,7 @@ else:
     print("Elemento não encontrado")
 
 print(lista)
-'''
+
 
 # Dada uma lista preenchida, separar os elementos inteiros dos demais em duas linhas.
 

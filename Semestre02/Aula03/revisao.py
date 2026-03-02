@@ -37,3 +37,28 @@ else:
 
 print(lista)
 '''
+
+# Dada uma lista preenchida, separar os elementos inteiros dos demais em duas linhas.
+
+lista = ["fiap", 65, True, 25, 68.8, "Engenharia"]
+lista_int = list()
+lista_outros = list()
+
+print(f"""
+lista original: {lista}
+lista de inteiros: {lista_int}
+lista outros: {lista_outros}
+""")
+
+for elem in lista:
+    elem = str(elem)
+    if elem.isnumeric():
+        lista_int.append(int(elem))
+    else:
+        lista_outros.append(elem)
+
+print(f"""
+lista original: {lista}
+lista de inteiros: {lista_int}
+lista outros: {lista_outros}
+""")

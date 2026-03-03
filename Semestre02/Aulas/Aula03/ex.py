@@ -18,6 +18,7 @@ os.system("cls")
 def numDobro():
     num = 5
     return num * 2
+print(numDobro())
 
 # 2
 def delta():
@@ -28,6 +29,7 @@ def delta():
     delta = (b ** 2) - 4 * a * c
 
     return delta
+print(delta())
 
 # 3
 def media4n():
@@ -37,6 +39,7 @@ def media4n():
     num4 = 7
 
     return (num1 + num2 + num3 + num4) / 4
+print(media4n())
 
 # 4
 def proxMultiplo():
@@ -44,8 +47,4 @@ def proxMultiplo():
     num2 = 22
 
     return num2 // num1 * num1 + num1
-
-print(numDobro())
-print(delta())
-print(media4n())
 print(proxMultiplo())

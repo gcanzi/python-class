@@ -1,0 +1,1 @@
+# Crie um procedimento chamado preencher_lista(lista) que passe uma lista por parâmetro e a preencha com valores numéricos até que seja digitado ponto (.).

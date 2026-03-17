@@ -32,7 +32,7 @@ preencherLista(lista)
 
 def contarPares(l: list) -> int:
     contador = 0
-    for i in range(0, len(lista)):
+    for i in range(0, len(l)):
         if (l[i] % 2) == 0:
             contador += 1
     return contador
@@ -49,6 +49,38 @@ def numerosAcimaDaMedia(l: list) -> list:
 
     return mediaLista
 
-#8
+# 8
 print(f"\nA lista com os valores acima da média é {numerosAcimaDaMedia(lista)}")
 
+def removerNegativos(l: list) -> list:
+    listaPositiva = []
+    for i in range(0, len(l)):
+        if l[i] >= 0:
+            listaPositiva.append(l[i])
+    return listaPositiva
+
+# 9
+print(f"\nA lista sem números negativos é {removerNegativos(lista)}")
+
+def retornaMaisProximo(l: list, valor: float) -> float:
+    maisProximo = l[0]
+    
+    if l[0] > valor:
+        menorDiferenca = l[0] - valor
+    else:
+        menorDiferenca = valor - l[0]
+
+    for i in range(0, len(l)):
+        if l[i] > valor:
+            diferencaAtual = l[i] - valor
+        else:
+            diferencaAtual = valor - l[i]
+            
+        if diferencaAtual < menorDiferenca:
+            menorDiferenca = diferencaAtual
+            maisProximo = l[i]       
+    return maisProximo
+
+# 10
+valorAlvo = float(input("\nDigite um valor para buscar o mais próximo: "))
+print(f"O valor mais próximo de {valorAlvo} na lista é {retornaMaisProximo(lista, valorAlvo)}")

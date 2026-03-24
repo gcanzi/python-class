@@ -29,4 +29,6 @@ def troca_vogais(f: str) -> str:
     return nf
 
 frase2 = "Edson de Oliveira"
-print(frase2)
+print(frase)
+new_frase = troca_vogais(frase)
+print("".join(new_frase))

@@ -36,3 +36,30 @@ print(nome2.split('e'))
 # replace
 nome1 = nome.replace('e', 'E')
 print(nome1)
+
+nome1 = nome.replace('e', '?')
+print(nome1)
+
+nome1 = nome.replace('e', '?', 1)
+print(nome1)
+
+# metodo strip()
+os.system("cls")
+texto = "      strip elimina os espaços      "
+print(f"|{texto}|")
+texto = texto.strip()
+print(f"|{texto}|")
+
+# operador in
+os.system("cls")
+num = 3
+if num in [1, 2, 3, 4, 5]:
+    print(f"{num} está na lista!")
+else:
+    print(f"{num} não está na lista!")
+
+nome = "Edson de Oliveira"
+if "de" not in nome:
+    print(f"'de' não está em '{nome}'.")
+else:
+    print(f"'de' está em '{nome}'.")
